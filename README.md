@@ -1,11 +1,11 @@
 # portfolio-website
 Portfolio website showcasing what I can do (work in progress).
 
-HTML
-CSS
-JavaScript
+HTML\n
+CSS\n
+JavaScript\n
 
 Not in this project:
-Java
-Python
-SQL
+Java\n
+Python\n
+SQL\n

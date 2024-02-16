@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Word Counter</title>
+
+    <link rel="stylesheet" href="programs.css">
+
+
+</head>
+
+<body>
+    <div class="top-nav-bar">
+
+        <div class="d1-1">
+            <nav id="nt1-1">
+                <a href="../frontpage.html">
+                    front page <!-- -->
+                </a>
+            </nav>
+        </div>
+        <div class="d1-2">
+            <nav id="nt1-2">
+                <a href="vat_calculator.html"><b>Word Counter</b></a>
+            </nav>
+        </div>
+        <div class="d1-3">
+            <nav id="nt1-3">
+                <a href="../info.html">whoami?
+                    <!-- <img id ="clover" src="images/apila.PNG"> -->
+                </a>
+                <a href="../programs_hub.html">programs</a>
+            </nav>
+        </div>
+    </div>
+
+    <a href="../programs.html">
+        <button id="back">Back</button>
+    </a>
+    <br>
+
+    <input id="amount" type="number">
+    <input id="invert" type="checkbox">Invert
+    <br>
+    <input name="VAT" id="ten" type="radio">10%
+    <input name="VAT" id="fourteen" type="radio">14%
+    <input name="VAT" id="twentyfour" type="radio">24%
+    <br>
+    <p></p>
+    <button id="calculate" onclick="calculate_vat()">Calculate VAT</button>
+
+    <div id="print_area"></div>
+
+
+    <div class="bottom-nav-bar">
+        <div id="creator">made by <a href="../info.html">Onni Sivén</a></div>
+    </div>
+
+    <script src="programs.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,137 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(36, 217, 160);
+    overflow: hidden;
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+
+.top-nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    background-color: rgb(99, 0, 69);
+    height: 0.5cm;
+    width: 100%;
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+#nt1-2 {
+    text-align: center;
+}
+
+#nt1-3 {
+    text-align: right;
+    position: absolute;
+    right: 30px;
+
+}
+
+a {
+    color: rgb(36, 217, 160);
+    padding-right: 10px;
+}
+
+#clover {
+    filter: grayscale();
+    height: 0.87cm;
+    border-radius: 10%;
+    position: absolute;
+    top: 0;
+}
+
+#clover:hover {
+    filter: none;
+}
+
+/* ohjelmien muotoilu alkaa */
+
+#characters {
+    border: none;
+    width: 400px;
+    background-color:rgb(255, 238, 208);
+    border-radius: 5px;
+}
+
+#words {
+    border: none;
+    background-color:rgb(255, 238, 208);
+    border-radius: 5px;
+    resize: none;
+}
+
+button {
+    background-color: rgba(99, 0, 69, 0.547);
+    color: rgb(36, 217, 160);
+    border-radius: 7px;
+    border: none;
+    text-align: center;
+    align-items: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+button:hover {
+    background-color: rgb(99, 0, 69);
+}
+
+.sliders {
+    display: grid;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    background: rgba(99, 0, 69, 0.547);
+    color: rgb(36, 217, 160);
+    border-radius: 22px;
+    height: 7px;
+}
+
+input[type="range"]:focus {
+    outline: none;
+  }
+
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+     background-color: rgb(36, 217, 160);
+     height: 15px;
+     width: 25px;
+     border-radius: 22px;
+  }
+
+
+input[type=number] {
+    border-radius: 7px;
+    background-color: rgb(36, 217, 160);
+    text-align: center;
+    width: 80px;
+}
+
+
+#creator {
+    background-color: rgba(99, 0, 69, 0.547);
+    align-content: right;
+    text-align: center;
+    align-items: center;
+    height: 0.6cm;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 0px;
+    border-radius: 6px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: 10px;
+}

@@ -1,0 +1,116 @@
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(36, 217, 160);
+    overflow: hidden;
+    margin: 0;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+.top-nav-bar {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    background-color: rgb(99, 0, 69);
+    height: 0.5cm;
+    width: 100%;
+    margin: 0;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.d1-2 {
+    align-self: left;
+}
+
+#nt1-2 {
+    text-align: center;
+}
+
+#nt1-3 {
+    text-align: right;
+    position: absolute;
+    right: 30px;
+
+}
+
+a {
+    color: rgb(36, 217, 160);
+    padding-right: 10px;
+}
+
+#clover {
+    filter: grayscale();
+    height: 0.87cm;
+    border-radius: 10%;
+    position: absolute;
+    top: 0;
+}
+
+#clover:hover {
+    filter: none;
+}
+
+
+.programs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 20px;
+
+
+
+}
+
+
+
+.programs div {
+    background-color: rgba(99, 0, 69, 0.547);
+    border-radius: 6px;
+    text-align: center;
+    padding: 15px;
+    height: 50px;
+    width: 200px;
+    margin: auto;
+
+
+}
+
+.programs div:hover {
+    background-color: rgb(99, 0, 69);
+}
+
+
+
+
+
+#creator {
+    background-color: rgba(99, 0, 69, 0.547);
+    align-content: right;
+    text-align: center;
+    height: 0.6cm;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 0px;
+    border-radius: 6px;
+    width: 150px;
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+/* 
+* {
+    filter:grayscale()
+}
+
+*:hover {
+    filter:none;
+}
+*/

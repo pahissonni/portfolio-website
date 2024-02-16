@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Investing Calculator</title>
+
+    <link rel="stylesheet" href="../css/programs.css">
+
+
+
+</head>
+
+<body>
+    <div class="top-nav-bar">
+
+        <div class="d1-1">
+            <nav id="nt1-1">
+                <a href="../html/frontpage.html">
+                    front page <!-- -->
+                </a>
+            </nav>
+        </div>
+        <div class="d1-2">
+            <nav id="nt1-2">
+                <a href="../html/investing_calc.html"><b>Investing Calculator</b></a>
+            </nav>
+        </div>
+        <div class="d1-3">
+            <nav id="nt1-3">
+                <a href="../html/info.html">whoami?
+                    <!-- <img id ="clover" src="images/apila.PNG"> -->
+                </a>
+                <a href="../html/programs_hub.html">programs</a>
+            </nav>
+        </div>
+    </div>
+    <a href="../html/programs.html">
+        <button id="back">Back</button>
+    </a>
+
+    <div class="sliders">
+        <div id="starting_div">
+            Starting amount?
+            <input type="range" min="0" max="100" value="0" class="slider" id="start_slider">
+            <input type="number" id="start_value" value="">
+        </div>
+
+        <div id="how_long_div">
+            How long (years)?
+            <input type="range" min="0" max="100" value="0" class="slider" id="how_long_slider">
+            <input type="number" id="how_long_value" value="">
+        </div>
+
+        <div id="monthly_div">
+            Monthly investment?
+            <input type="range" min="0" max="10000" value="0" class="slider" id="monthly_slider">
+            <input type="number" id="monthly_value" value="">
+        </div>
+
+        <div id="yearly_div">
+            Yearly %?
+            <input type="range" min="0" max="100" value="0" class="slider" id="yearly_slider">
+            <input type="number" id="yearly_value" value="">
+        </div>
+
+        <button id="calculate" onclick="calculate_investment()">Calculate</button>
+
+        <div id="print_area"></div>
+    </div>
+
+
+
+
+    <div class="bottom-nav-bar">
+        <div id="creator">made by <a href="../html/info.html">Onni Sivén</a></div>
+    </div>
+
+    <script src="../js/programs.js"></script>
+
+</body>
+
+</html>

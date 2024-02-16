@@ -3,7 +3,7 @@ Portfolio website showcasing what I can do (work in progress).
 
 HTML<br />
 CSS<br />
-JavaScript<br />
+JavaScript<br /><br />
 
 Not in this project:<br /><br />
 Java<br />

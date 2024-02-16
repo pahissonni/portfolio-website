@@ -5,7 +5,7 @@ HTML<br />
 CSS<br />
 JavaScript<br />
 
-Not in this project:<br />
+Not in this project:<br /><br />
 Java<br />
 Python<br />
 SQL<br />

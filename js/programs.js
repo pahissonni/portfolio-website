@@ -63,6 +63,17 @@ function calculate_vat() {
 }
 
 
+function text_to_qr() {
+    document.getElementById("print-area").innerHTML = '';
+    input_text = document.getElementById("text").value;
+    var qr_code = new QRCode(document.getElementById("print-area"), {
+        text: input_text,
+        colorDark: "#000000",
+        colorLight: "#ffeed0",
+        correctLevel: QRCode.CorrectLevel.H
+    });
+}
+
 
 function count_characters() {
     let chars = document.getElementById("characters").value;

@@ -63,16 +63,18 @@ a {
 #characters {
     border: none;
     width: 400px;
-    background-color:rgb(255, 238, 208);
+    background-color:#ffeed0;
     border-radius: 5px;
 }
 
-#words {
+#words, #text {
     border: none;
     background-color:rgb(255, 238, 208);
     border-radius: 5px;
     resize: none;
+    outline: none;
 }
+
 
 button {
     background-color: rgba(99, 0, 69, 0.547);
@@ -92,7 +94,14 @@ button:hover {
 }
 
 .sliders {
+    margin-top: 10%;
     display: grid;
+    text-align: right;
+    justify-content: center;
+}
+
+.sliders div {
+    margin-bottom: 2%;
 }
 
 input[type=range] {
@@ -123,6 +132,18 @@ input[type=number] {
     width: 80px;
 }
 
+.program {
+    text-align: center;
+}
+
+img {
+    border: 5px solid #ffeed0;
+    border-radius: 4px;
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%;
+}
 
 #creator {
     background-color: rgba(99, 0, 69, 0.547);

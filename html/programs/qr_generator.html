@@ -3,10 +3,12 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>QR Code Generator</title>
 
     <link rel="stylesheet" href="../../css/programs.css">
-
+    <script src="../../js/programs.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
 
 
 </head>
@@ -40,15 +42,21 @@
     </a>
 
 
+    <div class="program">
+        <textarea rows="10" cols="60" id="text" type="text"></textarea>
+        <br>
+        <button id="text-to-qr" onclick="text_to_qr()">Generate a QR Code</button>
 
 
 
+    <div id="print-area"></div>
+</div>
 
     <div class="bottom-nav-bar">
         <div id="creator">made by <a href="../main_pages/info.html">Onni</a></div>
     </div>
 
-    <script src="../../js/programs.js"></script>
+
 
 </body>
 

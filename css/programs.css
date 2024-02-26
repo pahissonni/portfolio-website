@@ -93,6 +93,10 @@ button:hover {
     background-color: rgb(99, 0, 69);
 }
 
+#calculate {
+    margin-top: 5%;
+}
+
 .sliders {
     margin-top: 10%;
     display: grid;
@@ -132,6 +136,10 @@ input[type=number] {
     width: 80px;
 }
 
+input[type=radio] {
+    margin-top: 1%;
+}
+
 .program {
     text-align: center;
 }
@@ -143,6 +151,13 @@ img {
     margin-left: auto;
     margin-right: auto;
     max-width: 80%;
+}
+
+#print_area {
+    margin-top: 2%;
+    display: grid;
+    text-align: left;
+    justify-content: center;
 }
 
 #creator {

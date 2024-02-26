@@ -27,12 +27,28 @@ function calculate_investment() {
             total_investment += monthly_investment;
             
     } 
-    document.getElementById("print_area").innerHTML = "Result: " + result.toFixed(2) + "<br>Total investment: " + total_investment.toFixed(2)
-    + "<br>Profit: " + (result - total_investment).toFixed(2);
+    
+    var content =
+        "<table>" +
+        "<tr>" +
+        "<td>Total investment:</td>" +
+        "<td style='text-align: right;'>   " + total_investment.toLocaleString('fi-FI', {minimumFractionDigits: 2,
+            maximumFractionDigits: 2}) + "</td>" +
+        "</tr>" +
+        "<td>Profit:</td>" +
+        "<td style='text-align: right;'>   " + (result - total_investment).toLocaleString('fi-FI', {minimumFractionDigits: 2,
+            maximumFractionDigits: 2}) + "</td>" +
+        "<tr>" +
+        "<tr>" +
+        "<td>Result:</td>" +
+        "<td style='text-align: right;'>   " + result.toLocaleString('fi-FI', {minimumFractionDigits: 2,
+        maximumFractionDigits: 2}) + "</td>" +
+        "</tr>" +
+        "</table>";
 
+document.getElementById("print_area").innerHTML = content;
 
 }
-
 
 function calculate_vat() {
     let amount = parseFloat(document.getElementById("amount").value);

@@ -25,6 +25,10 @@ a:link {
 
 }
 
+nav :hover, #creator :hover {
+    color: rgb(43, 255, 188);
+}
+
 .d1-2 {
     align-self: left;
 }

@@ -3,6 +3,7 @@ body {
     color: rgb(36, 217, 160);
     overflow: hidden;
     margin: 0;
+    min-height: 100vh;
 }
 
 a:link {
@@ -25,7 +26,7 @@ a:link {
 
 }
 
-nav :hover, #creator :hover {
+nav :hover, #creator:hover {
     color: rgb(43, 255, 188);
 }
 
@@ -67,7 +68,7 @@ a {
     grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 20px;
-
+    margin-top: 15vh;
 
 
 }
@@ -79,11 +80,18 @@ a {
     border-radius: 6px;
     text-align: center;
     padding: 15px;
+    padding-bottom: 4vh;
     height: 50px;
     width: 200px;
     margin: auto;
+    margin-bottom: 5vh;
 
 
+
+}
+
+.programs p {
+    vertical-align: middle;
 }
 
 .programs div:hover {
@@ -91,23 +99,30 @@ a {
 }
 
 
+footer{
+    position:fixed;
+    bottom:13px;
+    right: 0;
+    }
 
 
+    footer button {
+        background-color: rgba(99, 0, 69, 0.547);
+        border: none;
+        color: rgb(36, 212, 156);
+        align-content: right;
+        text-align: center;
+        align-items: center;
+        height: 3vh;
+        width: 12vh;
+        border-radius: 6px;
+        margin-left: auto;
+        margin-right: 10px;
+    }
 
-#creator {
-    background-color: rgba(99, 0, 69, 0.547);
-    align-content: right;
-    text-align: center;
-    height: 0.6cm;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 5px;
-    padding-right: 0px;
-    border-radius: 6px;
-    width: 150px;
-    margin-left: auto;
-    margin-right: 10px;
-}
+    footer button:hover {
+        background-color: rgb(99, 0, 69);
+    }
 
 /* 
 * {

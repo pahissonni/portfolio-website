@@ -22,37 +22,43 @@ function calculate_investment() {
     let total_investment = start;
 
 
-        for  (let i = 1; i <= months; i++) {
-            result = (result * monthly_percent) + monthly_investment;
-            total_investment += monthly_investment;
-            
-    } 
-    
+    for (let i = 1; i <= months; i++) {
+        result = (result * monthly_percent) + monthly_investment;
+        total_investment += monthly_investment;
+
+    }
+
     var content =
         "<table>" +
         "<tr>" +
         "<td>Total investment:</td>" +
-        "<td style='text-align: right;'>   " + total_investment.toLocaleString('fi-FI', {minimumFractionDigits: 2,
-            maximumFractionDigits: 2}) + "</td>" +
+        "<td style='text-align: right;'>   " + total_investment.toLocaleString('fi-FI', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        }) + "</td>" +
         "</tr>" +
         "<td>Profit:</td>" +
-        "<td style='text-align: right;'>   " + (result - total_investment).toLocaleString('fi-FI', {minimumFractionDigits: 2,
-            maximumFractionDigits: 2}) + "</td>" +
+        "<td style='text-align: right;'>   " + (result - total_investment).toLocaleString('fi-FI', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        }) + "</td>" +
         "<tr>" +
         "<tr>" +
         "<td>Result:</td>" +
-        "<td style='text-align: right;'>   " + result.toLocaleString('fi-FI', {minimumFractionDigits: 2,
-        maximumFractionDigits: 2}) + "</td>" +
+        "<td style='text-align: right;'>   " + result.toLocaleString('fi-FI', {
+            minimumFractionDigits: 2,
+            maximumFractionDigits: 2
+        }) + "</td>" +
         "</tr>" +
         "</table>";
 
-document.getElementById("print_area").innerHTML = content;
+    document.getElementById("print_area").innerHTML = content;
 
 }
 
 function calculate_vat() {
     let amount = parseFloat(document.getElementById("amount").value);
-    
+
     if (document.getElementById("invert").checked) {
 
         if (document.getElementById("ten").checked) {
@@ -113,16 +119,37 @@ function count_words() {
 
 
 
-
+//vieläkään ei toimi oikein
 function count_same_words() {
     let words = document.getElementById("words").value;
     let splitted = words.trim().split(" ");
-    let duplicate_words = [];
+    let duplicate_words = new Map();
 
-    for (let i = 0; i < words.length; i++) {
-        for (let j = 0; j < words.length; j++) {
-                //jos sanat i on sama kun sanat j ja sana i ei ole tupla sanoissa niin
-                    //lisää sana tupla sanoihin
+    const removePunctuation = (word) => {
+        return word.replace(/[.,;:!?]$/, "");
+    };
+
+    for (let i = 0; i < splitted.length; i++) {
+        let word_i = removePunctuation(splitted[i].toLowerCase())
+        if (!duplicate_words.has(word_i)) {
+            for (let j = i + 1; j < splitted.length; j++) {
+                let word_j = removePunctuation(splitted[j].toLowerCase())
+
+                    if (word_i === word_j && !duplicate_words.has(word_i)) {
+                        duplicate_words.set(word_i, 2);
+                }   else if (word_i === word_j) {
+                        duplicate_words.set(word_i, duplicate_words.get(word_i) + 1);
+                }
+            }
         }
     }
+
+    let output = "The Amount of Duplicate Words: " + duplicate_words.size +
+                 ".<br>Here's the list of the words & how many times they appear:<br>";
+
+    duplicate_words.forEach((count, word) => {
+        output += `<br>${word} (${count})`;
+    });
+
+    document.getElementById("print_area").innerHTML = output;
 }

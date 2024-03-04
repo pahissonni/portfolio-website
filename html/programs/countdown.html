@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Countdown</title>
+
+    <link rel="stylesheet" href="../../css/programs.css">
+
+
+</head>
+
+<body>
+    <div class="top-nav-bar">
+
+        <div class="d1-1">
+            <nav id="nt1-1">
+                <a href="../main_pages/frontpage.html">
+                    front page <!-- -->
+                </a>
+            </nav>
+        </div>
+        <div class="d1-2">
+            <nav id="nt1-2">
+                <a href="./countdown.html"><b>Countdown</b></a>
+            </nav>
+        </div>
+        <div class="d1-3">
+            <nav id="nt1-3">
+                <a href="../main_pages/info.html">whoami?
+                    <!-- <img id ="clover" src="images/apila.PNG"> -->
+                </a>
+                <a href="../main_pages/programs_hub.html">programs</a>
+            </nav>
+        </div>
+    </div>
+
+    <a href="../main_pages/programs_hub.html">
+        <button id="back">Back</button>
+    </a>
+    <br>
+
+    <div class="program">
+        Date: 
+        <input id="goal_date" type="date">
+        <br>
+        <button id="calculate" onclick="setInterval(countdown, 1000);">Count</button>
+        <div id="print_area">
+        </div>
+    </div> 
+<footer>
+    <div class="bottom-nav-bar">
+        <button id ="creator" onclick="window.location.href='../main_pages/info.html'">made by Onni</button>
+    </div>
+</footer>
+
+    <script src="../../js/programs.js"></script>
+
+</body>
+
+</html>

@@ -154,3 +154,26 @@ function count_same_words() {
 
     document.getElementById("print_area").innerHTML = output;
 }
+
+
+function countdown() {
+    let current_date = new Date();
+    let goal_date_input = document.getElementById("goal_date").value;
+    let goal_date = new Date(goal_date_input);
+    let difference = goal_date - current_date;
+
+    let years = Math.floor(difference / (1000 * 60 * 60 * 24 * 365));
+    let days = Math.floor((difference % (1000 * 60 * 60 * 24 * 365)) / (1000 * 60 * 60 * 24));
+    let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
+    let seconds = Math.floor((difference % (1000 * 60)) / 1000);
+
+    document.getElementById("print_area").innerHTML =
+        "Time remaining: <br>" +
+        years + " years, <br>" +
+        days + " days, <br>" +
+        hours + " hours, <br>" +
+        minutes + " minutes, <br>" +
+        seconds + " seconds.";
+}
+

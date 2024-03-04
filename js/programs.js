@@ -122,7 +122,8 @@ function count_words() {
 //vieläkään ei toimi oikein
 function count_same_words() {
     let words = document.getElementById("words").value;
-    let splitted = words.trim().split(" ");
+    let trimmed = words.replace(/(\r\n|\n|\r)/gm," ");
+    let splitted = trimmed.trim().split(" ");
     let duplicate_words = new Map();
 
     const removePunctuation = (word) => {
